@@ -4,7 +4,8 @@
 Red-Black Tree를 구현하던 중 프로그램이 비정상 종료되었는데,  
 출력 로그는 아래와 같았다.  
 ```Fatal glibc error: malloc.c:2599 (sysmalloc): assertion failed:  
-(old_top == initial_top (av) && old_size == 0) || …```  
+(old_top == initial_top (av) && old_size == 0) || ...
+```  
 
 ## 원인 분석
 문제의 원인은 **구조체 타입 캐스팅 오류**였다.
